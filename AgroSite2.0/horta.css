@@ -125,94 +125,59 @@ main {
 
 .footer {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 10px; /* Reduz o espaço entre os elementos */
     background-color: #228b22;
-    padding: 10px;
+    padding: 10px 20px; /* Reduz o padding total */
     width: 100%;
-    justify-items: center;
-    align-items: start;
     color: #333;
+    justify-content: space-around;
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    text-align: center;
 }
 
-
-.inf {
- 
-    border-radius: 10px;
-    width: 350px;
+.inf, .fale, .infprof {
+    width: 100%;
+    max-width: 300px; /* Reduz a largura máxima para deixar mais compacto */
     display: flex;
-    align-items: start;
-    gap: 20px;
-
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px; /* Reduz o espaço entre os elementos internos */
+    margin-bottom: 5px; /* Reduz a margem inferior */
 }
 
 .imglogo {
-    width: 150px;
-    height: 150px;
+    width: 100px; /* Reduz o tamanho da imagem do logo */
+    height: 100px; /* Reduz o tamanho da imagem do logo */
     border-radius: 50%;
 }
 
-.fale{
-    width: 350px;
-    display: flex;
-    align-items: start;
-    gap: 20px;
-    padding-left: 500px;
-}
-.infprof {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
+.infoFooter h2, .infprof h2, .contato {
+    font-size: 18px; /* Reduz o tamanho da fonte dos títulos */
     color: #333;
-    size: "-10";
-    padding-left: 30%;
+    margin: 5px 0; /* Reduz a margem entre os elementos */
 }
 
-.infprof a {
-    color: #ffff;
+.infoFooter .endereco a, .numero a, .infprof a {
+    font-size: 14px; /* Reduz o tamanho da fonte dos links */
+    color: #ffffff;
     text-decoration: none;
 }
 
-
-.infprof h2 {
-    font-size: 25px;
-    color: #333;
-    margin: 0 0 10px;
-}
-
-.contato {
-    font-size: 23px;
-    color: #333;
-    text-align: center;
-
-}
-
-.inf h2 {
-    font-size: 24px;
-    color: #333;
-    margin: 0 0 10px;
-}
-
-.endereco a {
-    font-size: 16px;
-    color: #ffff;
-    text-decoration: none;
-}
-
-.contato {
-    color: #333;
-}
-
-.endereco a:hover {
+.infoFooter .endereco a:hover, .numero a:hover, .infprof a:hover {
     text-decoration: underline;
 }
 
-.numero a {
-    font-size: 18px;
-    color: #ffff;
-    text-decoration: none;
-}
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
 
-.numero a:hover {
-    text-decoration: underline;
+    .inf, .fale, .infprof {
+        align-items: flex-start;
+        text-align: left;
+    }
 }
