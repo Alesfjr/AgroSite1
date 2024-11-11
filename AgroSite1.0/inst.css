@@ -79,3 +79,100 @@ p {
   border-radius: 50%;
   border: 20px solid #5bbe42;
 }
+
+/*FOOOOOOOOOOOOOOOTTTTTTTTTTTTTEEEEEEEEEEERRRRRR*/
+
+.footer {
+  display: flex;
+  gap: 20px;
+  background-color: #228b22;
+  padding: 10px;
+  width: 100%;
+  justify-items: center;
+  align-items: start;
+  color: #333;
+}
+
+
+.inf {
+
+  border-radius: 10px;
+  width: 350px;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+
+}
+
+.imglogo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.fale{
+  width: 350px;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  padding-left: 500px;
+}
+.infprof {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: #333;
+  size: "-10";
+  padding-left: 30%;
+}
+
+.infprof a {
+
+  text-decoration: none;
+}
+
+
+.infprof h2 {
+  font-size: 25px;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.contato {
+  font-size: 23px;
+  color: #333;
+  text-align: center;
+
+}
+
+.inf h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.endereco a {
+  font-size: 16px;
+ 
+  text-decoration: none;
+}
+
+.contato {
+  color: #333;
+}
+
+.endereco a:hover {
+  text-decoration: underline;
+}
+
+.numero a {
+  font-size: 18px;
+
+  text-decoration: none;
+}
+
+.numero a:hover {
+  text-decoration: underline;
+}
+
